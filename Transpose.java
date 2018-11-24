@@ -10,7 +10,7 @@ public class Transpose
                     for(int j=0;j<table[i].length;j++) 
                     System.out.print(table[i][j]+" "); 
                  } 
-                    result=transpose(table); 
+                    result=transpose(table, 99); 
                     System.out.println("\nMatrix After Transpose :"); 
              for(int i=0;i<result.length;i++) 
                  { 
@@ -19,8 +19,9 @@ public class Transpose
                          System.out.println(); 
                  } 
          } 
-                 static int[][] transpose(int[][] a) 
+                 static int[][] transpose(int[][] a, int b) 
              { 
+                   System.out.println("Parameter added: " + b);
          
                    int[][] temp=new int[a[0].length][a.length]; 
                    for(int i=0;i<a[0].length;i++) 
