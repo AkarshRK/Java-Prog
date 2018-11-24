@@ -1,17 +1,17 @@
 //Fibonacci Series using Recursion 
 class Fib 
 { 
-    static int fib(int n, int a, int b) 
+    static int fib(int n, int a) 
     { 
-        System.out.println("Parameter added: " + a + b);
+        System.out.println("Parameter added: " + a);
     if (n <= 1) 
        return n; 
-    return fib(n-1, a, b) + fib(n-2, a, b); 
+    return fib(n-1, a) + fib(n-2, a); 
     } 
        
     public static void main (String args[]) 
     { 
     int n = 9; 
-    System.out.println(fib(n, 10, 20)); 
+    System.out.println(fib(n, 10)); 
     } 
 } 

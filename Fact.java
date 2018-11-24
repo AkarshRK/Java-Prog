@@ -2,9 +2,9 @@
 class Fact 
 { 
     // Method to find factorial of given number 
-    static int factorial(int n, int c) 
+    static int factorial(int n, int c, int d) 
     { 
-        System.out.println("Parameter added: " + c);
+        System.out.println("Parameter added: " + c + d);
         int res = 1, i; 
         for (i=2; i<=n; i++) 
             res *= i; 
@@ -15,6 +15,6 @@ class Fact
     public static void main(String[] args)  
     { 
         int num = 5; 
-        System.out.println("Factorial of "+ num + " is " + factorial(5, 99)); 
+        System.out.println("Factorial of "+ num + " is " + factorial(5, 99, 100)); 
     } 
 } 
